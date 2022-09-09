@@ -56,9 +56,6 @@ otu.relative <- abundances(phyloseq, "compositional")
 reads_sample <- readcount(phyloseq)
 
 
-#subset
-carbom <- subset_samples(carbom, Select_18S_nifH =="Yes")
-
 
 # convert phyloseq to TSE
 tse <- makeTreeSummarizedExperimentFromPhyloseq(phyloseq) 
@@ -87,4 +84,4 @@ crc <- meltAssay(se,
                        add_row_data = TRUE,
                        add_col_data = TRUE,
                        abund_values = "relabundance")
-molten_se
+crc

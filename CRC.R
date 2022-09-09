@@ -55,11 +55,6 @@ otu.relative <- abundances(phyloseq, "compositional")
 
 reads_sample <- readcount(phyloseq)
 
-
-#subset
-carbom <- subset_samples(carbom, Select_18S_nifH =="Yes")
-
-
 # convert phyloseq to TSE
 tse <- makeTreeSummarizedExperimentFromPhyloseq(phyloseq) 
 tse

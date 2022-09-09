@@ -78,8 +78,8 @@ unique(se$Country)
 
 
 library(mia)
-molten_se <- meltAssay(se,
+crc_se <- meltAssay(se,
                        add_row_data = TRUE,
                        add_col_data = TRUE,
                        abund_values = "relabundance")
-molten_se
+crc_se

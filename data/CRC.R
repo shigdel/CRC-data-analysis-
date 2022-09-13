@@ -4,9 +4,7 @@ cat("\f")
  
 rm(list = ls())
 
-setwd("C:/Users/rsh001/OneDrive - University of Bergen/COST/CRC data")
-
-library("ggplot2"); packageVersion("ggplot2")
+library("ggplot2")
 library(tidyr)
 library(mia)
 library(miaViz)
